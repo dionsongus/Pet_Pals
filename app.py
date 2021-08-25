@@ -18,8 +18,8 @@ app = Flask(__name__)
 #################################################
 
 from flask_sqlalchemy import SQLAlchemy
-# app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', 'postgresql://vwysicanhalywh:63a83944a590f818f0ac18e0af6051136f87b247d6924be366c44b296ac950b5@ec2-18-235-45-217.compute-1.amazonaws.com:5432/dfok31cp1og0gl') or "sqlite:///db.sqlite"
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://vwysicanhalywh:63a83944a590f818f0ac18e0af6051136f87b247d6924be366c44b296ac950b5@ec2-18-235-45-217.compute-1.amazonaws.com:5432/dfok31cp1og0gl'
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', 'postgresql://vwysicanhalywh:63a83944a590f818f0ac18e0af6051136f87b247d6924be366c44b296ac950b5@ec2-18-235-45-217.compute-1.amazonaws.com:5432/dfok31cp1og0gl') or "sqlite:///db.sqlite"
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://vwysicanhalywh:63a83944a590f818f0ac18e0af6051136f87b247d6924be366c44b296ac950b5@ec2-18-235-45-217.compute-1.amazonaws.com:5432/dfok31cp1og0gl'
 print("SQLALCHEMY_DATABASE_URI", app.config['SQLALCHEMY_DATABASE_URI'])
 # Remove tracking modifications
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
